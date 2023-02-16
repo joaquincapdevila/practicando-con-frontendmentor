@@ -12,7 +12,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -44,29 +44,29 @@
 
     <main>
         <div class="container">
-            <form>
+            <form action="../login.php" method="GET">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                    <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp">
                 </div>
                 <div class="mb-3">
                     <label for="apellido" class="form-label">Surname</label>
-                    <input type="text" class="form-control" id="apellido" aria-describedby="apellidoHelp">
+                    <input type="text" class="form-control" name="apellido" id="apellido" aria-describedby="apellidoHelp">
                 </div>
                 <div class="mb-3">
                     <label for="Email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="Email" id="Email" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="Password">
+                    <input type="password" class="form-control" name="Password" id="Password">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="submit" value="submit">
             </form>
         </div>
     </main>
